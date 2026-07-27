@@ -206,7 +206,7 @@ dependencies {
     // Core & Optimization
     coreLibraryDesugaring(libs.desugar.jdk.libs)
     // Parcelize runtime
-    implementation("org.jetbrains.kotlin:kotlin-parcelize-runtime:2.3.0")
+    implementation("org.jetbrains.kotlin:kotlin-parcelize-runtime:2.4.10")
     implementation(libs.androidx.profileinstaller)
     "baselineProfile"(project(":baselineprofile"))
 
@@ -283,10 +283,10 @@ dependencies {
     implementation(libs.ktor.server.core)
     implementation(libs.ktor.server.cio)
     implementation(libs.ktor.server.websockets)
-    implementation("io.ktor:ktor-server-content-negotiation-jvm:3.5.0")
-    implementation("io.ktor:ktor-server-cors-jvm:3.5.0")
-    implementation("io.ktor:ktor-server-default-headers-jvm:3.5.0")
-    implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:3.5.0")
+    implementation("io.ktor:ktor-server-content-negotiation-jvm:3.5.1")
+    implementation("io.ktor:ktor-server-cors-jvm:3.5.1")
+    implementation("io.ktor:ktor-server-default-headers-jvm:3.5.1")
+    implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:3.5.1")
 
     // Identity & Background
     implementation(libs.androidx.work.runtime.ktx)
@@ -368,22 +368,22 @@ dependencies {
         implementation(libs.jose4j)
         implementation(libs.apache.httpclient)
 
-        implementation("androidx.compose.foundation:foundation:1.12.0-alpha03")
-        implementation("androidx.compose.ui:ui:1.12.0-alpha03")
-        implementation("androidx.compose.ui:ui-graphics:1.12.0-alpha03")
-        implementation("androidx.compose.ui:ui-tooling:1.12.0-alpha03")
-        implementation("androidx.compose.ui:ui-tooling-preview:1.12.0-alpha03")
-        implementation("androidx.compose.ui:ui-text-google-fonts:1.12.0-alpha03")
-        implementation("androidx.compose.animation:animation:1.12.0-alpha03")
+        implementation("androidx.compose.foundation:foundation:1.12.0-beta02")
+        implementation("androidx.compose.ui:ui:1.12.0-beta02")
+        implementation("androidx.compose.ui:ui-graphics:1.12.0-beta02")
+        implementation("androidx.compose.ui:ui-tooling:1.12.0-beta02")
+        implementation("androidx.compose.ui:ui-tooling-preview:1.12.0-beta02")
+        implementation("androidx.compose.ui:ui-text-google-fonts:1.12.0-beta02")
+        implementation("androidx.compose.animation:animation:1.12.0-beta02")
     }
 }
 
 configurations.all {
     resolutionStrategy.force(
-        "androidx.compose.foundation:foundation:1.12.0-alpha03",
-        "androidx.compose.foundation:foundation-layout:1.12.0-alpha03",
-        "androidx.compose.foundation:foundation-android:1.12.0-alpha03",
-        "androidx.compose.foundation:foundation-layout-android:1.12.0-alpha03"
+        "androidx.compose.foundation:foundation:1.12.0-beta02",
+        "androidx.compose.foundation:foundation-layout:1.12.0-beta02",
+        "androidx.compose.foundation:foundation-android:1.12.0-beta02",
+        "androidx.compose.foundation:foundation-layout-android:1.12.0-beta02"
     )
 }
 
