@@ -206,7 +206,7 @@ dependencies {
     // Core & Optimization
     coreLibraryDesugaring(libs.desugar.jdk.libs)
     // Parcelize runtime
-    implementation("org.jetbrains.kotlin:kotlin-parcelize-runtime:2.3.0")
+    implementation("org.jetbrains.kotlin:kotlin-parcelize-runtime:2.4.21")
     implementation(libs.androidx.profileinstaller)
     "baselineProfile"(project(":baselineprofile"))
 
@@ -283,10 +283,10 @@ dependencies {
     implementation(libs.ktor.server.core)
     implementation(libs.ktor.server.cio)
     implementation(libs.ktor.server.websockets)
-    implementation("io.ktor:ktor-server-content-negotiation-jvm:3.5.0")
-    implementation("io.ktor:ktor-server-cors-jvm:3.5.0")
-    implementation("io.ktor:ktor-server-default-headers-jvm:3.5.0")
-    implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:3.5.0")
+    implementation("io.ktor:ktor-server-content-negotiation-jvm:3.6.0")
+    implementation("io.ktor:ktor-server-cors-jvm:3.6.0")
+    implementation("io.ktor:ktor-server-default-headers-jvm:3.6.0")
+    implementation("io.ktor:ktor-serialization-kotlinx-json-jvm:3.6.0")
 
     // Identity & Background
     implementation(libs.androidx.work.runtime.ktx)
